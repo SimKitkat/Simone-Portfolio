@@ -73,6 +73,12 @@ body {
   text-decoration: none;
 }
 
+img {
+  width: 50%;
+  height: 50%;
+  background-size: contain;
+}
+
 /* Contact Section */
 #contact {
   padding: 50px 20px;
