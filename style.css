@@ -150,19 +150,34 @@ body {
   border-radius: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   #navbar ul {
     flex-direction: column;
     align-items: center;
   }
 
   #navbar li {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    width: 80%;
+  }
+
+  #welcome-section h1 {
+    font-size: 5vw;
+  }
+
+  #welcome-section p {
+    font-size: 3.5vw;
+  }
+
+  #skills li {
+    font-size: 4vw;
   }
 }
