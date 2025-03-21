@@ -1,31 +1,33 @@
 /* Color Palette */
 :root {
-  --background-light: #f7edd4;
-  --background-medium: #e6ddc8;
-  --background-dark: #d5cebb;
-  --accent-dark: #c2b8a1;
-  --text-dark: #4a403a;
+  --background-light: #d7cec7;
+  --background-medium: #c09f80;
+  --background-dark: #76323f;
+  --accent-dark: #565656;
+  --text-light: #f8fafc;
+  --text-dark: #007acc;
 }
 
 /* General Styles */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
   background: var(--background-light);
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 /* Navigation Bar */
 #navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background: var(--accent-dark);
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2% 0;
+  padding: 0.5% 0;
   z-index: 1000;
 }
 
@@ -35,7 +37,6 @@ body {
   margin: 0;
   padding: 0;
   width: 60%;
-  justify-content: space-around;
 }
 
 #navbar li {
@@ -44,10 +45,20 @@ body {
 
 #navbar a {
   text-decoration: none;
-  color: white;
+  color: var(--text-light);
   font-size: 1.2em;
   font-weight: bold;
 }
+h2 {
+  color: var(--text-dark);
+}
+#welcome-section img {
+  height: 30%;
+  max-width: 30%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 #welcome-section h1 {
   font-size: 3vw;
 }
@@ -63,12 +74,12 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--background-light);
-  color: white;
+  color: var(--text-light);
 }
 
 #projects {
-  padding: 5%;
-  background: var(--background-medium);
+  padding: 3%;
+  background: var(--background-light);
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -84,7 +95,7 @@ body {
 }
 
 .project-tile {
-  background: white;
+  background: var(--background-dark);
   padding: 4%;
   border-radius: 10px;
   width: 20%;
@@ -94,10 +105,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: black;
+  border: solid 0.4rem var(--accent-dark);
 }
 
 .project-tile:hover {
   transform: scale(1.05);
+  background-color: var(--accent-dark);
+  color: white;
+  border: solid 0.4rem var(--background-dark);
 }
 
 .project-tile a {
@@ -140,16 +156,16 @@ body {
 #contact {
   background: var(--accent-dark);
   color: white;
-  padding: 1%;
+  padding: 0.2%;
 }
 
 #profile-link {
   display: inline-block;
-  margin-top: 2%;
-  color: white;
+  margin-top: 1%;
+  color: #76323f;
   text-decoration: none;
   font-weight: bold;
-  background: var(--text-dark);
+  background: var(--text-light);
   padding: 1% 4%;
   border-radius: 5px;
 }
@@ -158,7 +174,7 @@ body {
   overflow: hidden;
   position: relative;
   padding: 10px 0;
-  background: #d5cebb;
+  background: var(--background-medium);
 }
 
 .certificate-slider {
@@ -196,6 +212,11 @@ body {
 
 @media (max-width: 768px) {
   .certificate-slider img {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  #welcome-section img {
     width: 25%;
   }
 }
