@@ -29,6 +29,10 @@ nav {
   padding: 0.5% 0;
   z-index: 1000;
 }
+
+h2 {
+  padding: 1%;
+}
 .nav-links {
   list-style: none;
   display: flex;
