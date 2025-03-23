@@ -1,16 +1,15 @@
 /* Color Palette */
 :root {
-  --background-light: #d7cec7;
-  --background-medium: #c09f80;
+  --background-light: linear-gradient(to right, #eacda3, #d6ae7b);
+  --background-medium: #eacda3;
   --background-dark: #76323f;
-  --accent-dark: #565656;
+  --accent-dark: #2c2a4a;
   --text-light: #f8fafc;
-  --text-dark: #007acc;
 }
 
 /* General Styles */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -49,9 +48,7 @@ body {
   font-size: 1.2em;
   font-weight: bold;
 }
-h2 {
-  color: var(--text-dark);
-}
+
 #welcome-section img {
   height: 30%;
   max-width: 30%;
@@ -218,6 +215,7 @@ h2 {
 @media (max-width: 768px) {
   #welcome-section img {
     width: 25%;
+    height: 25%;
   }
 }
 
