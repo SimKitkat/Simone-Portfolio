@@ -50,9 +50,11 @@ body {
 }
 
 #welcome-section img {
-  height: 30%;
-  max-width: 30%;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 50%;
+  display: block;
   margin: 0 auto;
 }
 
