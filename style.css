@@ -212,10 +212,9 @@ body {
     width: 25%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   #welcome-section img {
-    width: 25%;
-    height: 25%;
+    max-width: 120px;
   }
 }
 
